@@ -2669,7 +2669,7 @@ progress {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: var(--bs-accordion-active-color);
+  color:#7046fa;
   background-color: var(--bs-accordion-active-bg);
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
@@ -29067,23 +29067,32 @@ small,
 .gradient-btn-1:hover::before {
   background-position: right;
 }
+
 .gradient-btn-1::before {
   content: "";
   position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background-image: linear-gradient(90deg, rgb(13, 0, 59) 21%, rgb(238, 149, 88) 50%, rgb(13, 0, 59) 80%);
-  background-size: 250%;
-  background-position: left;
-  transition: all 0.5s ease;
+  inset: 0; /* Cubre todo el botón */
+  z-index: -1; /* Coloca el fondo detrás del botón */
+  border-radius: inherit; /* Respeta el borde redondeado del botón */
+  background: linear-gradient(
+    135deg,
+    #800080 10%,
+    #a020f0 25%,
+    #d8bfd8 40%,
+    rgb(13, 0, 59) 60%,
+    rgb(13, 0, 59) 90%
+  );
+  background-size: 250%; /* Hace que el degradado se extienda */
+  background-position: left; /* Posición inicial del degradado */
+  transition: all 0.5s ease; /* Transición suave para el efecto hover */
 }
+
 .gradient-btn-1::after {
   content: "";
   position: absolute;
-  inset: -1px;
-  z-index: -2;
-  border-radius: inherit;
+  inset: -1px; /* Crea un borde visual con un degradado adicional */
+  z-index: -2; /* Coloca este elemento detrás del pseudo `::before` */
+  border-radius: inherit; /* Respeta el borde redondeado */
   background-image: linear-gradient(90deg, #6a41fb 10.35%, #f49959 92.29%);
 }
 .gradient-btn-2 {
@@ -29409,8 +29418,8 @@ small,
   background: linear-gradient(90deg, transparent, var(--clr-1) 40%, var(--clr-2) 60%, transparent);
 }
 .subtitle-flush-x--secondary {
-  --clr-1: hsl(var(--secondary-key));
-  --clr-2: hsl(var(--secondary-key));
+  --clr-1: #9d4edd;
+  --clr-2: #c77dff;
 }
 .todo-box {
   max-width: 490px;
@@ -29510,7 +29519,7 @@ small,
   width: 2rem;
   height: 2px;
   border-radius: 0;
-  background: linear-gradient(90deg, #6a41fb 30%, #f49959 70%);
+  background: linear-gradient(90deg, #6a41fb 30%, #dfd9d5 70%);
 }
 .todo-nav__link:focus {
   color: hsl(var(--white));
@@ -29522,7 +29531,7 @@ small,
   width: 2rem;
   height: 2px;
   border-radius: 0;
-  background: linear-gradient(90deg, #6a41fb 30%, #f49959 70%);
+  background: linear-gradient(90deg, #6a41fb 30%, #dfd9d5  70%);
 }
 .faq-1__para {
   display: -webkit-box;
@@ -38011,7 +38020,7 @@ button.bg-grad-6:hover {
 }
 .clr-secondary-key {
   --clr-opacity: 1;
-  color: hsl(var(--secondary-key)/var(--clr-opacity));
+  color: #e0aaff;
 }
 .\:clr-secondary-key:hover {
   --clr-opacity: 1;
@@ -38741,7 +38750,7 @@ button.bg-grad-6:hover {
 Design Specific Custom Color 
 */
 .clr-grad-1 {
-  background: linear-gradient(90deg, #6a41fb 30%, #f49957 70%);
+  background: linear-gradient(90deg, #6a41fb 30%, #c3bbb6  70%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
