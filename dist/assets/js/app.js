@@ -1118,3 +1118,22 @@ if (listSlider) {
 		},
 	});
 }
+
+  // Obtén todos los enlaces con anclajes
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Previene la acción predeterminada del enlace
+
+      // Obtén el ID del enlace (sección de destino)
+      const targetId = link.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      // Desplázate suavemente a la sección de destino
+      targetElement.scrollIntoView({
+        behavior: 'smooth', // Desplazamiento suave
+        block: 'start', // Alineación del bloque (por defecto al inicio de la sección)
+      });
+    });
+  });

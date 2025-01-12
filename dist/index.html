@@ -68,26 +68,26 @@
             <div class="menu-nav d-flex align-items-lg-center flex-column flex-lg-row flex-grow-1 gap-4 pb-4 pb-lg-0 rounded">
               <ul class="list list-lg-row mx-lg-auto">
                 <li class="menu-list">
-                  <a href="#" class="link menu-link"> Home </a>
+                  <a href="./index.html" class="link menu-link"> Home </a>
                   
                 </li>
                 <li class="menu-list">
-                  <a href="pricing.html" class="link menu-link"> Sobre nosotros </a>
+                  <a href="#aboutUs" class="link menu-link"> Sobre nosotros </a>
                 </li>
                 <li class="menu-list">
-                  <a href="#" class="link menu-link"> Servicios</a>
+                  <a href="#services" class="link menu-link"> Servicios</a>
                   
                 </li>
                 <li class="menu-list">
-                  <a href="#" class="link menu-link"> Testimonios </a>
+                  <a href="#testimonials" class="link menu-link"> Testimonios </a>
                 </li>
                 <li class="menu-list">
-                  <a href="#" class="link menu-link"> Faqs </a>
+                  <a href="#preguntitas" class="link menu-link"> Faqs </a>
                 </li>
               </ul>
               <ul class="list list-lg-row gap-4 gap-lg-6">
                 <li class="menu-list mx-4 mx-lg-0">
-                  <button type="button" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1"> Enviar </button>
+                  <button type="button" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1"> Nuestro sistema </button>
                 </li>
               </ul>
             </div>
@@ -116,9 +116,31 @@
             <p class="fs-18 fw-bold clr-neutral-80 max-text-50 mx-auto mb-10 animate-text-from-bottom">El paso que tu marca necesita para destacar, conectar y conquistar en un mundo en constante evolución.</p>
             <div class="newsletter-1 d-inline-block w-100 max-text-60 mx-auto mb-4 position-relative z-1 overflow-hidden rounded fadeIn_bottom">
               <div class="d-flex p-3 bg-neutral-10 rounded ">
-                <input type="text" class="form-control newsletter-1__input bg-transparent clr-neutral-60" placeholder="¿Con que comenzamos?">
-                <button type="button" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1"> Enviar </button>
+                <input type="text" id="inputText" class="form-control newsletter-1__input bg-transparent clr-neutral-60" placeholder="¿Con que comenzamos?">
+                <button type="button" onclick="sendToWhatsapp()" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1"> Enviar </button>
               </div>
+              
+              <script>
+                function sendToWhatsapp() {
+                  // Obtener el valor del input
+                  const inputValue = document.getElementById('inputText').value;
+                  
+                  // Número de WhatsApp al que se enviará el mensaje
+                  const phoneNumber = "+5493517653221"; // Número de WhatsApp actualizado
+                  
+                  // Verificar si el input tiene texto
+                  if(inputValue.trim() !== "") {
+                    // Crear la URL de WhatsApp
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(inputValue)}`;
+                    
+                    // Redirigir al usuario a WhatsApp
+                    window.open(whatsappUrl, "_blank");
+                  } else {
+                    alert("Por favor ingresa un mensaje.");
+                  }
+                }
+              </script>
+              
             </div>
             <ul class="hero-1__tag-list list list-row align-items-center justify-content-center gap-3 flex-wrap">
               <li class="animate-fadeInBottom">
@@ -165,31 +187,42 @@
             <ul class="list list-row gap-4 scroller-x__list">
               <li>
                 <div class="brand-btn d-inline-block py-4 px-10 rounded-pill bg-neutral-10">
+                 <a href="https://ariasyospina.com/" target="_blank">
                   <img src="./assets/img/works/1.png" alt="image" class="img-fluid">
+                 </a>
                 </div>
               </li>
               <li>
                 <div class="brand-btn d-inline-block py-4 px-10 rounded-pill bg-neutral-10">
+                 <a href="https://mudanzasenpanama.com/" target="_blank">
                   <img src="./assets/img/works/2.png" alt="image" class="img-fluid">
+                 </a>
                 </div>
               </li>
               <li>
                 <div class="brand-btn d-inline-block py-4 px-10 rounded-pill bg-neutral-10">
+                 <a href="https://mentalcare.com.ar/" target="_blank">
                   <img src="./assets/img/works/3.png" alt="image" class="img-fluid">
+                 </a>
                 </div>
               </li>
               <li>
                 <div class="brand-btn d-inline-block py-4 px-10 rounded-pill bg-neutral-10">
-                  <img src="./assets/img/works/4.png" alt="image" class="img-fluid">
+                 <a href="https://mcpaadvisors.com/" target="_blank"> 
+                  <img src="./assets/img/works/4.png" alt="image" class="img-fluid"></a>
                 </div>
               </li>
               <li>
                 <div class="brand-btn d-inline-block py-4 px-10 rounded-pill bg-neutral-10">
-                  <img src="./assets/img/works/5.png" alt="image" class="img-fluid">
+                  <a href="https://a3family.net/" target="_blank">
+                    <img src="./assets/img/works/5.png" alt="image" class="img-fluid">
+                  </a>
                 </div>
               </li> <li>
                 <div class="brand-btn d-inline-block py-4 px-10 rounded-pill bg-neutral-10">
-                  <img src="./assets/img/works/6.png" alt="image" class="img-fluid">
+                 <a href="https://talentoydesarrollo.com.ar/" target="_blank">         
+                     <img src="./assets/img/works/6.png" alt="image" class="img-fluid">
+                </a>
                 </div>
               </li>
              
@@ -210,8 +243,8 @@
         <div class="text-xl-end pe-xl-6">
           <div class="d-inline-block position-relative">
             <img src="./assets/img/celu.jpg" alt="image" class="w-100 parallax-image">
-            <a href="#" class="circle-btn welcome-img-btn">
-              <span class="circle-btn__text"> Conoce más sobre nosotros </span>
+            <a href="#services" class="circle-btn welcome-img-btn">
+              <span class="circle-btn__text"> Conoce nuestros servicios </span>
               <img src="./assets/img/long-arrow-down.png" alt="image" class="img-fluid mb-4 z-1">
             </a>
           </div>
@@ -220,7 +253,7 @@
       <div class="col-lg-6">
         <div class="d-flex align-items-center flex-wrap gap-4 mb-4">
           <div class="w-30 border-bottom border-2x border-neutral-100 welcome-dash"></div>
-          <h6 class="mb-0 clr-neutral-90 animate-text-from-right"> Sobre Nosotros </h6>
+          <h6 id="aboutUs" class="mb-0 clr-neutral-90 animate-text-from-right"> Sobre Nosotros </h6>
         </div>
         <h2 class="d4 clr-neutral-90 mb-6 fw-extrabold animate-line-3d"> Descubre Nuestra <span class="clr-grad-1">Agencia</span>
         </h2>
@@ -307,7 +340,7 @@
           <div class="col-md-5">
             <div class="d-flex align-items-center gap-4 flex-wrap">
               <div class="w-30 subtitle-flush-x subtitle_line_1"></div>
-              <h6 class="mb-0 fs-18 clr-neutral-90 fw-extrabold animate-text-from-right"> Conoce en qué somos expertos. </h6>
+              <h6 id="services" class="mb-0 fs-18 clr-neutral-90 fw-extrabold animate-text-from-right"> Conoce en qué somos expertos. </h6>
             </div>
           </div>
           <div class="col-md-7 col-xl-5">
@@ -537,7 +570,7 @@
   </div>
   <!-- /Ticker Section  -->
   <!-- FAQ 1 -->
-  <div class="faq-section-1 section-space-top section-space-sm-bottom">
+  <div class="faq-section-1 section-space-top section-space-sm-bottom" id="testimonials">
     <div class="section-space-sm-bottom">
       <div class="container">
         <div class="row justify-content-center">
@@ -760,7 +793,7 @@
   <!-- /FAQ 1 -->
   <div class="overflow-hidden">
     <!-- FAQ 2 -->
-    <div class="faq-section-2 section-space-sm-y">
+    <div class="faq-section-2 section-space-sm-y" id="preguntitas">
       <div class="faq-section-2__inner section-space-sm-top">
         <div class="section-space-sm-y">
           <div class="container">
@@ -768,9 +801,9 @@
               <div class="col-lg-8">
                 <div class="d-flex align-items-center gap-4 flex-wrap mb-4">
                   <div class="w-30 subtitle-flush-x subtitle-flush-x--secondary subtitle_line_6"></div>
-                  <h6 class="mb-0 fs-18 clr-secondary-key fw-extrabold animate-text-from-right"> Creative Approach </h6>
+                  <h6 class="mb-0 fs-18 clr-secondary-key fw-extrabold animate-text-from-right"> Por si tenías alguna duda...</h6>
                 </div>
-                <h3 class="mb-0 clr-neutral-90 animate-line-3d"> Questions? We have <br> Answers. </h3>
+                <h3 class="mb-0 clr-neutral-90 animate-line-3d"> Estamos para  <br> resolverlas. </h3>
               </div>
             </div>
           </div>
@@ -1276,6 +1309,13 @@
     <img src="./assets/img/footer-1-shape.webp" alt="image" class="img-fluid footer-1__shape">
   </footer>
   <!-- /Footer  -->
+  <div style="position: fixed; bottom: 60px; right: 20px; z-index: 999;">
+    <a href="https://wa.me/5493517653221" target="_blank" id="whatsappLink" style="display: flex; align-items: center; background-color: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <i class="fab fa-whatsapp" style="font-size: 20px; margin-right: 10px;"></i>
+        Chat en WhatsApp
+    </a>
+</div>
+
   <!-- scrpts -->
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/app.js"></script>
