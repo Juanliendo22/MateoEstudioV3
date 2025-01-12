@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Plax - Banking, Finance & Fintech HTML Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Plax - Banking, Finance & Fintech HTML Template</span>
+	</header>
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li>
+							<a href="#settings" class="dt-navbar__link">Settings</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#include_set" class="dt-navbar__link dt-navbar__link_nested">Template Settings</a></li>
+								<li><a href="#include_fonts" class="dt-navbar__link dt-navbar__link_nested">Include Fonts</a></li>
+								<li><a href="#include_icons" class="dt-navbar__link dt-navbar__link_nested">Edit Icons</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+						</li>
+						<li>
+							<a href="#html_structure_header" class="dt-navbar__link">HTML structure of "Header"</a>
+						</li>
+						<li>
+							<a href="#html_structure_footer" class="dt-navbar__link">HTML structure of Footer</a>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>
+			</nav>
+		</aside>
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Plax - Banking, Finance & Fintech HTML Template</h2>
+				<p>by: bslthemes</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleyua@gmail.com">beshleyua@gmail.com</a></p>
+			</div>
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+html/
+│
+├──doc/
+├──template/
+│──│──css/
+│──│──scss/
+│──│──img/
+│──│──fonts/
+│──│──js/
+│──│──│──main.js
+│──│──|──plugins/
+│──│──index.html
+│──│──home-2.html
+│──│──home-3.html
+│──│──home-4.html
+│──│──home-5.html
+│──│──about.html
+│──│──career-details.html
+│──│──career.html
+│──│──coming-soon.html
+│──│──blog.html
+│──│──contact.html
+│──│──price.html
+│──│──register.html
+│──│──services.html
+│──│──publication.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css/</span> - compiled css styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">scss/</span> - main .scss styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js/</span> - all JS library for template
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">main.js</span> - main JS for template</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Template Settings</h2>
+				<p>For editing styling, colors, sizes, etc of the template you can use following settings, folder "/scss/_variables.scss". You need to compile the .sсss files to "/css" folder. You can use the "Visual Studio Code" app -> "Live Sass Compiler".</p>
+				<pre class="code language-html">
+					<code>
+@import url('https://fonts.googleapis.com/css2?family=Questrial');
+
+$font-1: 'Switzer-Variable';
+$font-2: 'Questrial',
+sans-serif;
+
+
+$color-1-1: rgba(242, 116, 87, 1);
+$color-1-2: rgba(3, 166, 166, 1);
+$color-1-3: rgba(160, 205, 205, 1);
+$color-1-4: rgba(242, 250, 250, 1);
+
+
+$color-2-1: rgba(13, 81, 82, 1);
+$color-2-2: rgba(137, 141, 150, 1);
+$color-2-3: rgba(196, 196, 196, 1);
+$color-2-4: rgba(137, 141, 150, 0.2);
+$color-2-5: rgba(255, 255, 255, 1);
+
+$color-3-1: rgba(27, 23, 23, 1);
+$color-3-2: rgba(39, 38, 38, 1);
+
+
+$t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+$t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+
+$gradient-1: linear-gradient(180deg, #F27457 0%, #A08488 100%);
+$gradient-2: linear-gradient(0deg, #B3D4D8 0%, #DEECE8 100%);
+$gradient-3: linear-gradient(0deg, #224D50 0%, #1C6360 100%);
+					</code>
+				</pre>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>For editing fonts of the template you can use following settings, folder "/scss/_variables.scss". You need to compile the .sсss files to "/css" folder. You can use the "Visual Studio Code" app -> "Live Sass Compiler".</p>
+				<pre class="code language-html">
+					<code>
+@import url('https://fonts.googleapis.com/css2?family=Questrial');
+					</code>
+				</pre>
+				<p>
+					Next step is to replace "$font-1: 'Questrial'," to your fonts names.
+				</p>
+			</article>
+			<article id="include_icons" class="dt-section">
+				<h2 class="dt-title">Edit Icons</h2>
+				<p>In this template are defined some of classes for icons, see all icons here - <a href="https://fontawesome.com/v5/search">https://fontawesome.com/v5/search</a>, use search and select icons.</p>
+				<p>Copy icon class (for example "fas fa-code") and add to tag in html file like this:</p>
+				<pre class="code language-html">
+					<code>
+&lt;i class="fas fa-pencil-ruler"&gt;&lt;/i&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+
+    &lt;title&gt;Plax - Banking, Finance & Fintech HTML Template&lt;/title&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="HandheldFriendly" content="true"&gt;
+    &lt;meta name="author" content="bslthemes" /&gt;
+
+    &lt;!-- switzer font css --&gt;
+    &lt;link rel="stylesheet" href="fonts/css/switzer.css" type="text/css" media="all"&gt;
+    &lt;!-- font awesome css --&gt;
+    &lt;link rel="stylesheet" href="fonts/css/font-awesome.min.css" type="text/css" media="all"&gt;
+    &lt;!-- bootstrap grid css --&gt;
+    &lt;link rel="stylesheet" href="css/plugins/bootstrap-grid.css" type="text/css" media="all"&gt;
+    &lt;!-- swiper css --&gt;
+    &lt;link rel="stylesheet" href="css/plugins/swiper.min.css" type="text/css" media="all"&gt;
+    &lt;!-- magnific popup --&gt;
+    &lt;link rel="stylesheet" href="css/plugins/magnific-popup.css" type="text/css" media="all"&gt;
+    &lt;!-- plax css --&gt;
+    &lt;link rel="stylesheet" href="css/style.css" type="text/css" media="all"&gt;
+
+    &lt;!-- Favicon --&gt;
+    &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+    &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;!-- wrapper --&gt;
+    &lt;div id="smooth-wrapper" class="mil-wrapper"&gt;
+
+        &lt;!-- preloader --&gt;
+        &lt;div class="mil-preloader"&gt;
+            &lt;div class="mil-load"&gt;&lt;/div&gt;
+            &lt;p class="h2 mil-mb-30"&gt;&lt;span class="mil-light mil-counter" data-number="100"&gt;100&lt;/span&gt;&lt;span class="mil-light"&gt;%&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- preloader end --&gt;
+
+        &lt;!-- scroll progress --&gt;
+        &lt;div class="mil-progress-track"&gt;
+            &lt;div class="mil-progress"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- scroll progress end --&gt;
+
+        &lt;!-- back to top --&gt;
+        &lt;div class="progress-wrap active-progress"&gt;&lt;/div&gt;
+
+        &lt;!-- top panel end --&gt;
+        &lt;div class="mil-top-panel"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;!-- top panel end --&gt;
+
+        &lt;!-- content --&gt;
+        &lt;div id="smooth-content"&gt;
+
+            &lt;!-- banner --&gt;
+            &lt;div class="mil-banner mil-dissolve"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- banner end --&gt;
+
+            &lt;!-- features --&gt;
+            &lt;div class="mil-features mil-p-160-80"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- features end --&gt;
+
+            &lt;!-- facts --&gt;
+            &lt;div class="mil-facts mil-p-0-80"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- facts end --&gt;
+
+            &lt;!-- call to action --&gt;
+            &lt;div class="mil-cta mil-up"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- call to action end --&gt;
+
+            &lt;!-- features --&gt;
+            &lt;div class="mil-features mil-p-160-80"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- features end --&gt;
+
+            &lt;!-- testimonials --&gt;
+            &lt;div class="mil-testimonials mil-p-0-160"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- testimonials end --&gt;
+
+            &lt;!-- brands --&gt;
+            &lt;div class="mil-brands mil-p-0-160"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- brands end --&gt;
+
+            &lt;!-- security --&gt;
+            &lt;div class="mil-security mil-up"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- security end --&gt;
+
+            &lt;!-- faq --&gt;
+            &lt;div class="mil-faq mil-p-160-130"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- faq end --&gt;
+
+            &lt;!-- call to action --&gt;
+            &lt;div class="mil-cta mil-up"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- call to action end --&gt;
+
+            &lt;!-- footer --&gt;
+            &lt;footer class="mil-p-160-0"&gt;
+                ...
+            &lt;/footer&gt;
+            &lt;!-- footer end --&gt;
+
+        &lt;/div&gt;
+        &lt;!-- content end --&gt;
+    &lt;/div&gt;
+    &lt;!-- wrapper end --&gt;
+
+    &lt;!-- jquery js --&gt;
+    &lt;script src="js/plugins/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/plugins/jquery.validate.min.js"&gt;&lt;/script&gt;
+    &lt;!-- swiper css --&gt;
+    &lt;script src="js/plugins/swiper.min.js"&gt;&lt;/script&gt;
+    &lt;!-- gsap js --&gt;
+    &lt;script src="js/plugins/gsap.min.js"&gt;&lt;/script&gt;
+    &lt;!-- scroll smoother --&gt;
+    &lt;script src="js/plugins/ScrollSmoother.min.js"&gt;&lt;/script&gt;
+    &lt;!-- scroll trigger js --&gt;
+    &lt;script src="js/plugins/ScrollTrigger.min.js"&gt;&lt;/script&gt;
+    &lt;!-- scroll to js --&gt;
+    &lt;script src="js/plugins/ScrollTo.min.js"&gt;&lt;/script&gt;
+    &lt;!-- magnific --&gt;
+    &lt;script src="js/plugins/magnific-popup.js"&gt;&lt;/script&gt;
+    &lt;!-- plax js --&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_header" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Header"</h2>
+				<pre class="code language-html">
+					<code>
+
+&lt;!-- top panel end --&gt;
+&lt;div class="mil-top-panel"&gt;
+	&lt;div class="container"&gt;
+		&lt;a href="index.html" class="mil-logo"&gt;
+			&lt;img src="img/logo.png" alt="Plax" width="83" height="32"&gt;
+		&lt;/a&gt;
+		&lt;nav class="mil-top-menu"&gt;
+			&lt;ul&gt;
+				&lt;li class="mil-has-children mil-active"&gt;
+					&lt;a href="#."&gt;Home&lt;/a&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;Type 1&lt;/a&gt;&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				...
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+		&lt;div class="mil-menu-buttons"&gt;
+			&lt;a href="register.html" class="mil-btn mil-sm"&gt;Log in&lt;/a&gt;
+			&lt;div class="mil-menu-btn"&gt;
+				&lt;span&gt;&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- top panel end --&gt;
+
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_footer" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Footer"</h2>
+				<pre class="code language-html">
+					<code>						
+&lt;!-- footer --&gt;
+&lt;footer class="mil-p-160-0"&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xl-3"&gt;
+				&lt;a href="#." class="mil-footer-logo mil-mb-60"&gt;
+					&lt;img src="img/logo-2.png" alt="Plax" width="28" height="32"&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="col-xl-3 mil-mb-60"&gt;
+				&lt;h6 class="mil-mb-60"&gt;Usefull Links&lt;/h6&gt;
+				&lt;ul class="mil-footer-list"&gt;
+					&lt;li class="mil-text-m mil-soft mil-mb-15"&gt;
+						&lt;a href="index.html"&gt;Home&lt;/a&gt;
+					&lt;/li&gt;
+					...
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class="col-xl-3 mil-mb-60"&gt;
+				&lt;h6 class="mil-mb-60"&gt;Help&lt;/h6&gt;
+				&lt;ul class="mil-footer-list"&gt;
+					&lt;li class="mil-text-m mil-soft mil-mb-15"&gt;
+						999 Rue du Cherche-Midi, 7755500666 Paris, &lt;br&gt;France
+					&lt;/li&gt;
+					&lt;li class="mil-text-m mil-soft mil-mb-15"&gt;
+						+001 (808) 555-0111
+					&lt;/li&gt;
+					&lt;li class="mil-text-m mil-soft mil-mb-15"&gt;
+						support@plax.network
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class="col-xl-3 mil-mb-80"&gt;
+				&lt;h6 class="mil-mb-60"&gt;Newsletter&lt;/h6&gt;
+				&lt;p class="mil-text-xs mil-soft mil-mb-15"&gt;Subscribe to get the latest news form us&lt;/p&gt;
+				&lt;form class="mil-subscripe-form-footer"&gt;
+					&lt;input class="mil-input" type="email" placeholder="Email"&gt;
+					&lt;button type="submit"&gt;&lt;i class="far fa-envelope-open mil-dark"&gt;&lt;/i&gt;&lt;/button&gt;
+					&lt;div class="mil-checkbox-frame mil-mt-15"&gt;
+						&lt;div class="mil-checkbox"&gt;
+							&lt;input type="checkbox" id="checkbox" checked&gt;
+							&lt;label for="checkbox"&gt;&lt;/label&gt;
+						&lt;/div&gt;
+						&lt;p class="mil-text-xs mil-soft"&gt;Subscribe to get the latest news&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mil-footer-bottom"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-xl-6"&gt;
+					&lt;p class="mil-text-s mil-soft"&gt;© 2024 Plax Finance & Fintech Design&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class="col-xl-6"&gt;
+					&lt;p class="mil-text-s mil-text-right mil-sm-text-left mil-soft"&gt;Developed by &lt;a href="https://bslthemes.com" target="blank"&gt;bslthemes&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;
+&lt;!-- footer end --&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - <a href="https://fontawesome.com/v5/search">https://fontawesome.com/v5/search</a>
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Source & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Isotope</span> <a target="_blank" href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Swiper</span> <a target="_blank" href="https://swiperjs.com/">https://swiperjs.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Bootstrap</span> <a target="_blank" href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">GSAP</span> <a target="_blank" href="https://greensock.com">https://greensock.com</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Istock, 
+							Shutterstock, 
+							Freepik, 
+							Pexels, 
+							Unsplash</span>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script>
+</body>
+</html>

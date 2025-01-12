@@ -29305,7 +29305,7 @@ small,
   cursor: pointer;
 }
 .brand-btn img {
-  max-width: 100px;
+  max-width: 200px;
   height: 36px;
   -o-object-fit: contain;
   object-fit: contain;
@@ -32432,7 +32432,7 @@ html.lenis {
     inset-inline-end: -50%;
     inset-block-start: 0;
     inset-block-end: 0;
-    background: linear-gradient(90deg, rgb(106, 65, 251) 5%, rgb(244, 89, 194) 25%, rgba(244, 153, 89, 0.75) 60%, rgba(244, 153, 89, 0.25) 100%);
+    background: linear-gradient(90deg, rgb(106, 65, 251) 5%, rgb(244, 89, 194) 25%, rgb(244, 89, 194) 60%, rgb(244, 89, 194) 100%);
     background-size: 125%;
     background-position: left;
     background-repeat: no-repeat;
