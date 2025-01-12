@@ -38756,8 +38756,8 @@ Design Specific Custom Color
   -webkit-text-fill-color: transparent;
 }
 .clr-grad-4 {
-  background: linear-gradient(270deg, #4D89F9 1.21%, #704EE7 21.78%, #E8428C 71.65%, #ED6D4B 100%);
-  background-clip: text;
+  background: linear-gradient(270deg, #b626a3 1.21%, #c42cd5 21.78%, #73117e 71.65%, #ff00f7 100%); 
+   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
