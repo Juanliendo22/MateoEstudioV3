@@ -37458,10 +37458,10 @@ html.lenis {
   background-color: hsl(var(--info-100)/var(--bg-opacity));
 }
 .bg-grad-1 {
-  background: linear-gradient(90deg, #6a41fb 30%, #f49959 70%);
+  background: linear-gradient(90deg, #6a41fb, #d4a2df, #6a41fb);
 }
 a.bg-grad-1 {
-  background: linear-gradient(90deg, #6a41fb, #f49959, #6a41fb);
+  background: linear-gradient(90deg, #6a41fb, #d4a2df, #6a41fb);
   background-size: 200%;
   transition: all 0.4s ease-in-out;
   background-position: left;
@@ -40312,4 +40312,7 @@ Design System Custom Color
 }
 .\:shadow-10:hover {
   box-shadow: 0 0 2px hsl(var(--shadow)/0.24), 20px 20px 40px -4px hsl(var(--shadow)/0.24);
+}
+.text-underline23 {
+  text-decoration: none;
 }
