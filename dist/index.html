@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CDK011BTLC');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modern AI Landing HTML Template">
-  <meta name="keywords" content="bootstrap 5, saas, landing page">
-  <meta name="author" content="Themetags">
+  <meta name="description" content="Mateo Estudio: Diseño Web y Desarrollo Digital">
+  <meta name="keywords" content="diseño web, Posicionamiento seo, branding, creatividad, marketing digital, diseño gráfico, resultados">
+  <meta name="author" content="Mateo Estudio">
+  <meta property="og:title" content="Mateo Estudio: Diseño Web y Desarrollo Digital">
+  <meta property="og:description" content="Explora nuestros servicios de diseño web, branding y soluciones creativas para llevar tu negocio al siguiente nivel.">
+  <meta property="og:image" content="./assets/img/logoMateo.png">
+  <meta property="og:url" content="http://mateoestudio.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mateo Estudio: Diseño Web y Desarrollo Digital">
+  <meta name="twitter:description" content="Servicios innovadores de diseño web y desarrollo digital para marcas que buscan destacar.">
+  <meta name="twitter:image" content="./assets/img/logoMateo.png">
+  
   <title>Mateo Estudio</title>
   <link rel="stylesheet" href="./assets/css/fonts/ff-1.css">
   <link rel="stylesheet" href="./assets/css/fonts/ff-3.css">
@@ -495,10 +510,17 @@
               </div>              <h4 class="mb-10 text-center clr-neutral-90 fw-extrabold animate-line-3d"> El Futuro de tu Marca Comienza <span class="d-inline-block clr-grad-4 ff-4 fw-normal">Aquí</span>
 
               </h4>
-              <button type="button" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1">
-               Descarga nuestra <br> propuesta
-                <i class="bi bi-arrow-up-right ms-2"></i>
-              </button>           
+              <button type="button" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1" onclick="downloadPDF()">Descarga nuestra <br> propuesta <i class="bi bi-arrow-up-right ms-2"></i></button>
+
+              <script>
+                  function downloadPDF() {
+                      const link = document.createElement('a');
+                      link.href = './assets/img/propuesta/service.pdf'; // Cambia esta ruta si es necesario
+                      link.download = 'propuesta.pdf'; // Nombre del archivo al descargar
+                      link.click();
+                  }
+              </script>
+                        
              </div>
           </div>
         </div>
